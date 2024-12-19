@@ -628,6 +628,7 @@ require('lazy').setup({
         -- But for many setups, the LSP (`ts_ls`) will work just fine
         ts_ls = {},
         astro = {},
+        elixirls = {},
         --
 
         lua_ls = {
@@ -918,6 +919,8 @@ require('lazy').setup({
         'typescript',
         'javascript',
         'astro',
+        'elixir',
+        'eex',
       },
       -- Autoinstall languages that are not installed
       auto_install = true,
