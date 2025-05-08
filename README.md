@@ -1,4 +1,4 @@
-# kickstart.nvim
+# my nvim config
 
 ## Introduction
 
