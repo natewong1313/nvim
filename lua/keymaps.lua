@@ -30,7 +30,9 @@ vim.keymap.set('n', '<C-S-k>', '<C-w>K', { desc = 'Move window to the upper' })
 vim.keymap.set({ 'n', 'i', 'v' }, '<C-s>', '<cmd> w <cr>')
 
 -- <leader>sth to show type hint in a hover window
-vim.keymap.set('n', '<leader>sth', vim.lsp.buf.hover)
+vim.keymap.set('n', '<leader>sth', function()
+  vim.lsp.buf.hover { border = 'single' }
+end)
 
 -- <leader> e to show full error message in float
 vim.keymap.set('n', '<leader>e', function()

@@ -12,6 +12,12 @@ return { -- You can easily change to a different colorscheme.
     vim.cmd.hi 'Comment gui=none'
   end,
 
+  -- 'mellow-theme/mellow.nvim',
+  -- priority = 1000,
+  -- config = function()
+  --   vim.cmd.colorscheme 'mellow'
+  -- end
+
   -- 'dgox16/oldworld.nvim',
   -- priority = 1000,
   -- config = function()
