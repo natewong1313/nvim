@@ -196,6 +196,7 @@ return {
     local servers = {
       -- clangd = {},
       gopls = {},
+      elixirls = {},
       -- pyright = {},
       basedpyright = {
         settings = {
