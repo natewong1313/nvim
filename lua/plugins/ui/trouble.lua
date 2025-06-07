@@ -1,12 +1,22 @@
 return {
   {
     'folke/trouble.nvim',
-    opts = {}, -- for default options, refer to the configuration section for custom setup.
+    opts = {
+      focus = true,
+      win = {
+        type = 'float',
+        border = 'rounded',
+      },
+      keys = {
+        ['<cr>'] = 'jump_close',
+        ['<esc>'] = 'close',
+      },
+    }, -- for default options, refer to the configuration section for custom setup.
     cmd = 'Trouble',
     keys = {
       {
         '<leader>xx',
-        '<cmd>Trouble diagnostics toggle<cr>',
+        '<cmd>Trouble diagnostics open focus=true<cr>',
         desc = 'Diagnostics (Trouble)',
       },
       {
