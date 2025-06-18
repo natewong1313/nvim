@@ -8,6 +8,9 @@ return { -- You can easily change to a different colorscheme.
   priority = 1000,
   -- opts = {}
   config = function()
+    require('obscure').setup {
+      transparent = true,
+    }
     vim.cmd.colorscheme 'obscure'
     vim.cmd.hi 'Comment gui=none'
   end,

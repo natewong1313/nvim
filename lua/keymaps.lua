@@ -52,3 +52,18 @@ vim.keymap.set('n', '<Esc>', function()
     end
   end
 end, { desc = 'Close opened float window' })
+
+-- some weird bullshit with the wm i use
+--https://github.com/forge-ext/forge/issues/90
+vim.g.clipboard = {
+  name = 'xsel',
+  copy = {
+    ['+'] = 'xsel --nodetach -i -b',
+    ['*'] = 'xsel --nodetach -i -p',
+  },
+  paste = {
+    ['+'] = 'xsel -o -b',
+    ['*'] = 'xsel -o -b',
+  },
+  cache_enabled = 1,
+}
